@@ -1,9 +1,10 @@
 // Garden Advice Program
 // Gives gardening tips based on the season and the type of plant.
 
-// Hardcoded values for the season and plant type
-let season = "summer"; // TODO: Replace with prompt() to allow user interaction.
-let plantType = "flower"; // TODO: Replace with prompt() to allow user interaction.
+// Ask the user for the season and plant type.
+// toLowerCase() means "Summer" and "summer" both work.
+let season = prompt("Which season is it? (summer or winter)").toLowerCase();
+let plantType = prompt("What type of plant is it? (flower or vegetable)").toLowerCase();
 
 // Returns advice for the season that is passed in
 function getSeasonAdvice(season) {
